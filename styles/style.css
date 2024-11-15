@@ -293,6 +293,17 @@ strong {
 	
 }
 
+.about .img-advogado-henrique {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	max-height: 700px;
+	animation: pulse 0.9s infinite;
+	
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(1);
@@ -316,6 +327,15 @@ strong {
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.301);
 }
 
+.img-advogado-henrique img{
+	transform: translateY(-10%);
+	max-width: 390px;
+	min-width: 350px;
+	height: 500px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.301);
+}
+
 @media screen and (max-width: 600px) {
 	.about .img-advogado {
 		flex: 1;
@@ -330,7 +350,27 @@ strong {
 
 	.img-advogado img {
 		transform: translateY(-1%);
-		max-width: 600px;
+		max-width: 400px;
+		min-width: 320px;
+		height: 600px;
+		border-radius: 20px;
+		box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.301);
+	}
+
+	.about .img-advogado-henrique {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 0;
+		max-height: 550px;
+		animation: pulse 0.9s infinite;
+
+	}
+
+	.img-advogado-henrique img {
+		transform: translateY(-1%);
+		max-width: 400px;
 		min-width: 320px;
 		height: 600px;
 		border-radius: 20px;
@@ -381,6 +421,8 @@ strong {
 
 .section-06 {
 	width: 100%;
+	background: var(--secondary);
+	color: #131313;
 }
 
 .section-06 h1 {
@@ -394,7 +436,23 @@ strong {
 	justify-content: center;
 	padding: 3rem;
 	gap: 1rem;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 600px){
+	.info {
+		/* align-items: center; */
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.info .line{
+		display: none;
+	}
+
+	.info p{
+		text-align: center;
+	}
 }
 
 .logo-footer {
@@ -411,23 +469,43 @@ strong {
 }
 
 .info div {
-	flex: 1;
+	/* flex: 1;  */
+	/* padding: -50%; */
+	text-align: center;
+}
+
+.info .line{
+	height: 450px;
+	font-size: 7px;
+	background-color: #998575;
+	border-radius: 20px;
+	margin-top: 1.5%;
+}
+
+.iframe{
+	width: 100%;
+}
+
+.title-iframe{
+	text-transform: uppercase;
+	color: #998575;
 	text-align: center;
 }
 
 iframe {
 	width: 100%;
-	min-width: 300px;
+	min-width: 350px;
+	/* padding-right: 15%; */
 }
 
-.address p {
+/* .address p {
 	height: 100%;
 	font-size: 135%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-}
+} */
 
 footer {
 	background-color: #131313;
