@@ -423,6 +423,7 @@ strong {
 	width: 100%;
 	background: var(--secondary);
 	color: #131313;
+	padding: 0.2rem 0;
 }
 
 .section-06 h1 {
